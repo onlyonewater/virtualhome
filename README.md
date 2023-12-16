@@ -12,6 +12,14 @@ class UnityCommunication(object):
     def render_script():
         """
         :param frame_rate: frame rate
+        :param output_folder: folder to output videos and frames
+        :param image_synthesis: save depth, segmentation, flow images
+        :param save_pose_data: save pose data
+        :param save_scene_states: save scene states
+        :param character_resource: path to character resource to be used
+        :param camera_mode: automatic (AUTO), first person (FIRST_PERSON), top (PERSON_TOP), your own camera
+        :param image_width: image_height
+        :param image_height: image_width
         """
         ......
 ```
