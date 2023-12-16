@@ -4,12 +4,33 @@
 
 - `function`: render_script
 
-```
-output_folder: the folder to saved frames and video
-frame_rate: frame rate
-image_synthesis: save depth, segmentation, flow images
+```python
+class UnityCommunication(object):
+    
+    ......
+
+    def render_script():
+        """
+        :param frame_rate: frame rate
+        """
+        ......
 ```
 
+- `function`: add_character_camera
+
+```python
+class UnityCommunication(object):
+    
+    ......
+
+    def add_character_camera():
+        """
+        :param list position: the position of the camera, with respect to the agent
+        :param list rotation: the rotation of the camera, with respect to the agent
+        :name: the name of the camera, used for recording when calling render script
+        """
+        ......
+```
 
 
 **VirtualHome** is a platform to simulate complex household activities via programs. Key aspect of VirtualHome is that it allows complex interactions with the environment, such as picking up objects, switching on/off appliances, opening appliances, etc. Our simulator can easily be called with a Python API: write the activity as a simple sequence of instructions which then get rendered in VirtualHome. You can choose between different agents and environments, as well as modify environments on the fly. You can also stream different ground-truth such as time-stamped actions, instance/semantic segmentation, and optical flow and depth. The platform allows to simulate multi-agent activities and can serve as an environment to train agents.
